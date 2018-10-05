@@ -21,9 +21,58 @@ body {
     background-color: #F5F5F5;
 }
 
-button, strong {
+strong {
     text-transform: uppercase;
 }
+
+/* WEEK 5 ALL BUTTON*/
+button {
+    height: 36px;
+    min-width: 64px;
+    font-size: 18px;
+    border-radius: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 8px;
+    background-color: white;
+    border-color: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.primary-button {
+    background-color: #3F51B5;
+   
+}
+
+.accent-button {
+    color: black;
+    background-color: #CDDC39;
+}
+
+.fab {
+    width: 50px;
+    height: 50px;
+    background-color: #CDDC39;
+    border-radius: 50%;
+    box-shadow: 0 6px 10px 0 #666;
+    transition: all 0.1s ease-in-out;
+  
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    line-height: 70px;
+    font-weight: bolder;
+  
+    position: fixed;
+    left: 30%;
+    bottom: 100px;
+ }
+  
+ .fab:hover {
+    box-shadow: 0 6px 14px 0 #666;
+    transform: scale(1.05);
+ }
 
 /* LAYOUT */
 
@@ -161,7 +210,7 @@ li.selected {
 }
 
 #tab-bar button, #chat-bar button {
-    background-color: white;
+   /* background-color: white;*/
     border: none;
     font-size: 13px;
     width: 33%;
@@ -169,7 +218,8 @@ li.selected {
     padding: 16px;
 
     /* flexify the buttons by growing them equally */
-    flex-grow: 1;
+    flex-grow: 1; 
+  
 }
 
 #tab-bar button.selected {
@@ -186,10 +236,11 @@ li.selected {
 
 /* CHAT BAR */
 
+
 #chat-bar button {
     /* override button styles. We set the chat bar to appear like a tab-bar above. This overrides the tab bar's button scaling */
     width: auto;
-    flex-grow: 0;
+    flex-grow: 0; 
 
     /* #7 #icns #smile adjust fa size */
     font-size: 24px;
@@ -271,7 +322,7 @@ li.selected {
 }
 
 .message button {
-    /* +5 min. button*/
+    /*+5 min. button*/
     background-color: #CDDC39;
     color: black;
     text-transform: uppercase;

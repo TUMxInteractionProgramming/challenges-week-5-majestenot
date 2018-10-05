@@ -150,13 +150,20 @@ function listChannels() {
     //$('#channels ul').append("<li>New Channel</li>")
 
     // #8 five new channels
-    $('#channels ul').append(createChannelElement(yummy));
+    /*$('#channels ul').append(createChannelElement(yummy));
     $('#channels ul').append(createChannelElement(sevencontinents));
     $('#channels ul').append(createChannelElement(killerapp));
     $('#channels ul').append(createChannelElement(firstpersononmars));
-    $('#channels ul').append(createChannelElement(octoberfest));
-}
+    $('#channels ul').append(createChannelElement(octoberfest));*/
 
+var channels = [yummy, sevencontinents, killerapp, firstpersononmars, octoberfest];
+
+    console.log('add channels:', channels); 
+    for (var i=0; i < channels.length; i++) { 
+    console.log('add channel:', channels[i]); 
+    $('#channels ul').append(createChannelElement(channels[i])); }
+
+}
 /**
  * #8 This function makes a new jQuery #channel <li> element out of a given object
  * @param channelObject a channel object
